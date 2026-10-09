@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>StudentHub</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admin.html">Admin</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="register.html">Register</a>
+        <a href="students.html">Students</a>
+    </nav>
+    <br>
+
+    <button onclick="changeTheme()">Light / Dark</button>
+
+</header>
+
+<main>
+
+    <section>
+
+        <h2>Student Registration</h2>
+
+        <form>
+
+            <label>Full Name:</label>
+
+            <input
+                type="text"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label>Email:</label>
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Student ID:</label>
+
+            <input
+                type="text"
+                placeholder="Enter student ID"
+            >
+
+            <label>Course:</label>
+
+            <select>
+
+                <option>Science</option>
+                <option>Mathematics and Computing</option>
+                <option>Management</option>
+                <option>Medicine</option>
+                <option>Pharmacy</option>
+                <option>Architecture</option>
+                <option>Design</option>
+
+            </select>
+
+            <label>Year:</label>
+
+            <select>
+
+                <option>First Year</option>
+                <option>Second Year</option>
+                <option>Third Year</option>
+                <option>Fourth Year</option>
+
+            </select>
+
+            <label>Password:</label>
+
+            <input
+                type="password"
+                placeholder="Create a password"
+                required
+            >
+
+            <label>Confirm Password:</label>
+
+            <input
+                type="password"
+                placeholder="Confirm password"
+                required
+            >
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+        <p style="text-align: center; margin-top: 20px;">
+        <a href="../php/view_registrations.php">
+            View Registered Students
+        </a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

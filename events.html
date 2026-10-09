@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>StudentHub</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admin.html">Admin</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="register.html">Register</a>
+        <a href="students.html">Students</a>
+    </nav>
+    <br>
+
+    <button onclick="changeTheme()">Light / Dark</button>
+
+</header>
+
+<main>
+
+        <!-- Practical 6 - JSON Events -->
+
+        <section id="jsonEvents" class="events-section">
+
+            <h2>Upcoming Events</h2>
+            <label for="searchInput">Search Events:</label>
+
+<input type="text"
+       id="searchInput"
+       placeholder="Search by event name">
+
+       <br><br>
+
+<label for="categoryFilter">
+    Filter by Category:
+</label>
+
+<select id="categoryFilter">
+
+    <option value="all">All Categories</option>
+
+    <option value="Technical">Technical</option>
+
+    <option value="Workshop">Workshop</option>
+
+    <option value="Sports">Sports</option>
+
+    <option value="Cultural">Cultural</option>
+
+    <option value="Career">Career</option>
+
+</select>
+
+<br><br>
+
+<label for="sortEvents">
+    Sort Events:
+</label>
+
+<select id="sortEvents">
+
+    <option value="default">Default Order</option>
+
+    <option value="az">A to Z</option>
+
+    <option value="za">Z to A</option>
+
+    <option value="dateAsc">Earliest Date First</option>
+
+    <option value="dateDesc">Latest Date First</option>
+
+</select>
+
+            <div id="loadingMessage">
+                Loading events...
+            </div>
+
+            <div id="errorMessage"></div>
+
+            <div id="eventList"></div>
+            <br>
+
+<div id="pagination">
+
+    <button id="prevPage">
+        Previous
+    </button>
+
+    <span id="pageNumber">
+        Page 1
+    </span>
+
+    <button id="nextPage">
+        Next
+    </button>
+
+</div>
+
+        </section>
+
+    </main>
+
+<footer>
+    <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub - Students</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>StudentHub</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admin.html">Admin</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="register.html">Register</a>
+        <a href="students.html">Students</a>
+    </nav>
+    <br>
+
+    <button onclick="changeTheme()">Light / Dark</button>
+
+</header>
+
+    <main>
+
+        <section id="studentsSection"
+                 class="events-section">
+
+            <h2>Student Profiles</h2>
+
+            <label for="studentSearch">Search Students:</label>
+
+<input type="text"
+       id="studentSearch"
+       placeholder="Search by student name">
+       <br><br>
+
+<label for="courseFilter">Filter by Course:</label>
+
+<select id="courseFilter">
+
+    <option value="all">All Courses</option>
+
+    <option value="B.Tech IT">
+        B.Tech IT
+    </option>
+
+    <option value="B.Tech CSE">
+        B.Tech CSE
+    </option>
+
+    <option value="BCA">
+        BCA
+    </option>
+
+</select>
+
+<br><br>
+
+<label for="yearFilter">
+    Filter by Year:
+</label>
+
+<select id="yearFilter">
+
+    <option value="all">All Years</option>
+
+    <option value="1">Year 1</option>
+
+    <option value="2">Year 2</option>
+
+    <option value="3">Year 3</option>
+
+    <option value="4">Year 4</option>
+
+</select>
+
+<br><br>
+
+<label for="studentSort">
+    Sort Students:
+</label>
+
+<select id="studentSort">
+
+    <option value="default">
+        Default Order
+    </option>
+
+    <option value="az">
+        A to Z
+    </option>
+
+    <option value="za">
+        Z to A
+    </option>
+
+    <option value="yearAsc">
+        Year: Low to High
+    </option>
+
+    <option value="yearDesc">
+        Year: High to Low
+    </option>
+
+</select>
+
+            <div id="studentList">
+                Loading students...
+            </div>
+
+
+        <div id="studentPagination">
+
+    <button id="studentPrev">
+        Previous
+    </button>
+
+    <span id="studentPageNumber">
+        Page 1
+    </span>
+
+    <button id="studentNext">
+        Next
+    </button>  
+
+</div>
+ </section>
+
+    </main>
+
+
+    <footer>
+
+        <h3>StudentHub Portal</h3>
+
+        <p>CHARUSAT University</p>
+
+        <p>Email: studenthub@example.com</p>
+
+        <p>Phone: +91 98765 43210</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
